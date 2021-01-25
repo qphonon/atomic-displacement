@@ -1,7 +1,7 @@
 ## atomic-displacement
 # Efficacious symmetry-adapted atomic displacement method for lattice dynamical studies
 
-For theory see Computer Physics Communications, Volume 259 (2021) Page 107635 (or  https://arxiv.org/abs/2007.06916 ).
+For theory see Computer Physics Communications, volume 259 (2021) 107635 (or  https://arxiv.org/abs/2007.06916 ).
 
 To build the binary `fm-forces', modify Makefile accordingly. 
 The only external library is LAPACK/BLAS.
