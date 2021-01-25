@@ -1,0 +1,12 @@
+--------------------------------------
+    SG = 191
+    Y = 1
+    SGbase(Y,SG)%sglabel    ='191-P6/m2/m2/m'
+    SGbase(Y,SG)%PG         ='D6h'
+    SGbase(Y,SG)%ncentering =1
+    SGbase(Y,SG)%centering(1:3,1) = (/           0.0d0,           0.0d0,           0.0d0 /)
+    SGbase(Y,SG)%PGNumOper  =24
+    SGbase(Y,SG)%symmorphic =1
+    SGbase(Y,SG)%nop        =24
+    SGbase(Y,SG)%assigned   =.TRUE.
+

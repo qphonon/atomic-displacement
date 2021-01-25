@@ -1,0 +1,138 @@
+! The sequence of classes follows the IT SG operations. However, we may have to first reorder some original IT operations
+!---------------------------------------------------------
+PG C1  # No 1
+NumOperAndNumClasses 1 1
+ClassSize 
+1
+E
+1   || A
+!--------------------------------------------------
+PG Ci # No 2
+NumOperAndNumClasses 2 2
+ClassSize 
+1 1
+E         i
+1.0       1.0     || Ag  Rx, Ry, Rz, x^2, y^2, z^2, xy, yz, xz
+1.0       -1.0    || Au  x, y, z
+!--------------------------------------------------------
+PG C2  # No 3
+NumOperAndNumClasses 2 2
+ClassSize
+1 1
+E         C2
+1.0       1.0     || A  z, Rz,  x^2, y^2, z^2, xy
+1.0       -1.0    || B  x, y, Rx, Ry,  yz, xz
+!--------------------------------------------------------
+PG Cs # No 4, Cs is reflection, or sigma
+NumOperAndNumClasses 2 2 
+ClassSize
+1              1
+E            sigma_h
+1.0           1.0       || A'  x,y,Rz, x^2,y^2,z^2,xy
+1.0          -1.0       || A''  z,Rx,Ry,yz,xz
+!---------------------------------------------------------
+PG C2h # No 5
+NumOperAndNumClasses 4 4
+ClassSize  # IT ordering
+1         1         1        1  
+E        C2	  I	  sigma_h    
+1.0      1.0      1.0      1.0      || Ag  Rz, x^2,y^2,z^2, xy
+1.0      -1.0      1.0      -1.0    || Bg  Rx, Ry,   xz, yz
+1.0      1.0     -1.0     -1.0      || Au  z
+1.0      -1.0     -1.0     1.0      || Bu  x, y 
+!---------------------------------------------------------
+PG C2v # No 7
+NumOperAndNumClasses 4 4
+ClassSize  
+1         1         1        1  
+E        C2	  sigmav   sigmav'    
+1.0      1.0      1.0      1.0      || A1  z,x^2,y^2,z^2
+1.0      1.0      -1.0     -1.0     || A2  Rz,xy
+1.0      -1.0     1.0     -1.0      || B1  x,Ry,xz
+1.0      -1.0     -1.0     1.0      || B2  y,Rx,yz
+!---------------------------------------------------------
+PG C6v
+NumOperAndNumClasses 12 6
+ClassSize  # IT ordering
+1         2         1        2        3          3
+E        2C3       C2      2C6   3sigma_d     3sigma_v
+1.0      1.0      1.0      1.0       1.0       1.0     ||  A1  z,  x^2+y^2, z^2    
+1.0      1.0      1.0      1.0      -1.0      -1.0     ||  A2  Rz    
+1.0      1.0     -1.0     -1.0      -1.0       1.0     ||  B1    
+1.0      1.0     -1.0     -1.0       1.0      -1.0     ||  B2     
+2.0     -1.0     -2.0      1.0       0.0       0.0     ||  E1  (x,y), ( Rx, Ry),  (xz,yz)
+2.0     -1.0      2.0     -1.0       0.0       0.0     ||  E2  (x^2-y^2, xy)      
+!---------------------------------------------------------
+PG D2h
+NumOperAndNumClasses 8 8
+ClassSize # Cotton's ordering (Must check this, I thought we need to use the IT ordering!?)
+1            1         1          1        1        1        1        1
+E           C2(z)     C2(y)      C2(z)    I      s(xy)    s(xz)     s(yz)
+1.0        1.0        1.0        1.0     1.0      1.0      1.0      1.0  || Ag  x^2 y^2 z^2   
+1.0        1.0       -1.0       -1.0     1.0      1.0     -1.0     -1.0  || B1g  Rx xy     
+1.0       -1.0        1.0       -1.0     1.0     -1.0      1.0     -1.0  || B2g  Ry xz   
+1.0       -1.0       -1.0        1.0     1.0     -1.0     -1.0      1.0  || B3g  Rz yz    
+1.0        1.0        1.0        1.0    -1.0     -1.0     -1.0     -1.0  || Au     
+1.0        1.0       -1.0       -1.0    -1.0     -1.0      1.0      1.0  || B1u  z     
+1.0       -1.0        1.0       -1.0    -1.0      1.0     -1.0      1.0  || B2u  y  
+1.0       -1.0       -1.0        1.0    -1.0      1.0      1.0     -1.0  || B3u  x    
+!---------------------------------------------------------
+PG D3h-type1
+NumOperAndNumClasses 12 6
+ClassSize
+1           2           1        2           3          3 
+E         2C3      sigma_h      2S_3     3sigma_v     3C_2
+1.0        1.0        1.0        1.0        1.0        1.0  ||  A1'    x^2 + y^2, z^2
+1.0        1.0        1.0        1.0       -1.0       -1.0  ||  A2'    Rz
+2.0       -1.0        2.0       -1.0        0.0        0.0  ||  E'     (x,y),  (x^2-y^2, xy)
+1.0        1.0       -1.0       -1.0       -1.0        1.0  ||  A1''   
+1.0        1.0       -1.0       -1.0        1.0       -1.0  ||  A2''   z
+2.0       -1.0       -2.0        1.0        0.0        0.0  ||  E''    (Rx,Ry),  (xz,yz)
+!---------------------------------------------------------
+PG D4h
+NumOperAndNumClasses 16 10
+ClassSize # IT ordering.  C2 comes before 2C4. STICK to the Cotton sequence for 2sigma_d and 2sigma_v? The 2C'' and 2C' must be consistent with 2sigma_d and 2sigma_v. If you swap one set, you need to swap another set.
+1       1        2             2             2       1             1         2               2               2   
+         E        C2       2C4      2C2'     2C2''         I   sigma_h       2S4  2sigma_v  2sigma_d   
+1        1        1            1             1       1              1         1               1              1   ||  A1g  x^2+y^2, z^2
+1        1        1           -1            -1       1              1         1              -1             -1   ||  A2g  Rz
+1        1       -1            1            -1       1              1        -1               1             -1   ||  B1g  x^2-y^2
+1        1       -1           -1             1       1              1        -1              -1              1   ||  B2g  xy
+2       -2        0            0             0       2             -2         0               0              0   ||  Eg   (Rx,Ry),  (xz,yz)
+1        1        1            1             1      -1             -1        -1              -1             -1   ||  A1u  
+1        1        1           -1            -1      -1             -1        -1               1              1   ||  A2u  z
+1        1       -1            1            -1      -1             -1         1              -1              1   ||  B1u  
+1        1       -1           -1             1      -1             -1         1               1             -1   ||  B2u 
+2       -2        0            0             0      -2              2         0               0              0   ||  Eu   (x,y)
+!---------------------------------------------------------
+PG D6h
+NumOperAndNumClasses 24 12
+ClassSize # IT ordering: Swap the Cotton sequence, and assume there is not mistake in Cotton label (!)
+1            2         1           2              3             3         1                   2           1         2           3            3  
+E           2C3       1C2          2C6           3C2''         3C2'       I                  2S6      sigma_h      2S3     3sigma_v      3sigma_d 
+ 1.0        1.0       1.0         1.0            1.0           1.0        1.0                 1.0        1.0       1.0        1.0          1.0     ||  A1g  x^2+y^2, z^2
+ 1.0        1.0       1.0         1.0           -1.0          -1.0        1.0                 1.0        1.0       1.0       -1.0         -1.0     ||  A2g  Rz
+ 1.0        1.0      -1.0        -1.0           -1.0           1.0        1.0                 1.0       -1.0      -1.0       -1.0          1.0     ||  B1g
+ 1.0        1.0      -1.0        -1.0            1.0          -1.0        1.0                 1.0       -1.0      -1.0        1.0         -1.0     ||  B2g
+ 2.0       -1.0      -2.0         1.0            0.0           0.0        2.0                -1.0       -2.0       1.0        0.0          0.0     ||  E1g  (Rx,Ry),  (xz,yz)
+ 2.0       -1.0       2.0        -1.0            0.0           0.0        2.0                -1.0        2.0      -1.0        0.0          0.0     ||  E2g  (x^2-y^2,xy)
+ 1.0        1.0       1.0         1.0            1.0           1.0       -1.0                -1.0       -1.0      -1.0       -1.0         -1.0     ||  A1u
+ 1.0        1.0       1.0         1.0           -1.0          -1.0       -1.0                -1.0       -1.0      -1.0        1.0          1.0     ||  A2u  z
+ 1.0        1.0      -1.0        -1.0           -1.0           1.0       -1.0                -1.0        1.0       1.0        1.0         -1.0     ||  B1u
+ 1.0        1.0      -1.0        -1.0            1.0          -1.0       -1.0                -1.0        1.0       1.0       -1.0          1.0     ||  B2u
+ 2.0       -1.0      -2.0         1.0            0.0           0.0       -2.0                 1.0        2.0      -1.0        0.0          0.0     ||  E1u  (x,y)
+ 2.0       -1.0       2.0        -1.0            0.0           0.0       -2.0                 1.0       -2.0       1.0        0.0          0.0     ||  E2u
+!---------------------------------------------------------
+PG D3d
+NumOperAndNumClasses 12 6
+ClassSize # The Cotton's and IT orderings are the same.
+1          2           3           1          2            3 
+ E         2C3       3C2         I          2S6      3sigma_d
+1.0        1.0        1.0        1.0        1.0          1.0   || A1g  x^2+y^2  z^2
+1.0        1.0       -1.0        1.0        1.0         -1.0   || A2g  Rz
+2.0       -1.0        0.0        2.0       -1.0          0.0   || Eu   (Rx,Ry),  (x^2-y^2,xy)
+1.0        1.0        1.0       -1.0       -1.0         -1.0   || A1u       
+1.0        1.0       -1.0       -1.0       -1.0          1.0   || A2u  z     
+2.0       -1.0        0.0       -2.0        1.0          0.0   || Eu   (x,y)
+!---------------------------------------------------------
+END

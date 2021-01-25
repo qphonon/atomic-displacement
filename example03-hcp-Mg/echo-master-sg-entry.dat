@@ -1,0 +1,31 @@
+SG 194-P6_3/m2/m2/c
+#optional PG D6h
+#optional ncentering 1
+#optional 1   0.000000000000000   0.000000000000000   0.000000000000000
+#optional PGNumOper 24
+#optional nonsymmorphic
+#optional 1  0.0000  0.0000  0.0000
+#optional 2  0.0000  0.0000  0.0000
+#optional 3  0.0000  0.0000  0.0000
+#optional 4  0.0000  0.0000  0.5000
+#optional 5  0.0000  0.0000  0.5000
+#optional 6  0.0000  0.0000  0.5000
+#optional 7  0.0000  0.0000  0.0000
+#optional 8  0.0000  0.0000  0.0000
+#optional 9  0.0000  0.0000  0.0000
+#optional 10  0.0000  0.0000  0.5000
+#optional 11  0.0000  0.0000  0.5000
+#optional 12  0.0000  0.0000  0.5000
+#optional 13  0.0000  0.0000  0.0000
+#optional 14  0.0000  0.0000  0.0000
+#optional 15  0.0000  0.0000  0.0000
+#optional 16  0.0000  0.0000  0.5000
+#optional 17  0.0000  0.0000  0.5000
+#optional 18  0.0000  0.0000  0.5000
+#optional 19  0.0000  0.0000  0.0000
+#optional 20  0.0000  0.0000  0.0000
+#optional 21  0.0000  0.0000  0.0000
+#optional 22  0.0000  0.0000  0.5000
+#optional 23  0.0000  0.0000  0.5000
+#optional 24  0.0000  0.0000  0.5000
+NumOper 24

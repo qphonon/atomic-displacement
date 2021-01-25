@@ -1,0 +1,7 @@
+SG 191-P6/m2/m2/m
+#optional PG D6h
+#optional ncentering 1
+#optional 1   0.000000000000000   0.000000000000000   0.000000000000000
+#optional PGNumOper 24
+#optional symmorphic
+NumOper 24

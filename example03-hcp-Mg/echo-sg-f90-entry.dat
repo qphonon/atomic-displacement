@@ -1,0 +1,36 @@
+--------------------------------------
+    SG = 194
+    Y = 1
+    SGbase(Y,SG)%sglabel    ='194-P6_3/m2/m2/c'
+    SGbase(Y,SG)%PG         ='D6h'
+    SGbase(Y,SG)%ncentering =1
+    SGbase(Y,SG)%centering(1:3,1) = (/           0.0d0,           0.0d0,           0.0d0 /)
+    SGbase(Y,SG)%PGNumOper  =24
+    SGbase(Y,SG)%symmorphic =0
+    SGbase(Y,SG)%nsy(1:3,1) = (/           0.0d0,           0.0d0,           0.0d0 /)
+    SGbase(Y,SG)%nsy(1:3,2) = (/           0.0d0,           0.0d0,           0.0d0 /)
+    SGbase(Y,SG)%nsy(1:3,3) = (/           0.0d0,           0.0d0,           0.0d0 /)
+    SGbase(Y,SG)%nsy(1:3,4) = (/           0.0d0,           0.0d0,     1.0d0/2.0d0 /)
+    SGbase(Y,SG)%nsy(1:3,5) = (/           0.0d0,           0.0d0,     1.0d0/2.0d0 /)
+    SGbase(Y,SG)%nsy(1:3,6) = (/           0.0d0,           0.0d0,     1.0d0/2.0d0 /)
+    SGbase(Y,SG)%nsy(1:3,7) = (/           0.0d0,           0.0d0,           0.0d0 /)
+    SGbase(Y,SG)%nsy(1:3,8) = (/           0.0d0,           0.0d0,           0.0d0 /)
+    SGbase(Y,SG)%nsy(1:3,9) = (/           0.0d0,           0.0d0,           0.0d0 /)
+    SGbase(Y,SG)%nsy(1:3,10) = (/           0.0d0,           0.0d0,     1.0d0/2.0d0 /)
+    SGbase(Y,SG)%nsy(1:3,11) = (/           0.0d0,           0.0d0,     1.0d0/2.0d0 /)
+    SGbase(Y,SG)%nsy(1:3,12) = (/           0.0d0,           0.0d0,     1.0d0/2.0d0 /)
+    SGbase(Y,SG)%nsy(1:3,13) = (/           0.0d0,           0.0d0,           0.0d0 /)
+    SGbase(Y,SG)%nsy(1:3,14) = (/           0.0d0,           0.0d0,           0.0d0 /)
+    SGbase(Y,SG)%nsy(1:3,15) = (/           0.0d0,           0.0d0,           0.0d0 /)
+    SGbase(Y,SG)%nsy(1:3,16) = (/           0.0d0,           0.0d0,     1.0d0/2.0d0 /)
+    SGbase(Y,SG)%nsy(1:3,17) = (/           0.0d0,           0.0d0,     1.0d0/2.0d0 /)
+    SGbase(Y,SG)%nsy(1:3,18) = (/           0.0d0,           0.0d0,     1.0d0/2.0d0 /)
+    SGbase(Y,SG)%nsy(1:3,19) = (/           0.0d0,           0.0d0,           0.0d0 /)
+    SGbase(Y,SG)%nsy(1:3,20) = (/           0.0d0,           0.0d0,           0.0d0 /)
+    SGbase(Y,SG)%nsy(1:3,21) = (/           0.0d0,           0.0d0,           0.0d0 /)
+    SGbase(Y,SG)%nsy(1:3,22) = (/           0.0d0,           0.0d0,     1.0d0/2.0d0 /)
+    SGbase(Y,SG)%nsy(1:3,23) = (/           0.0d0,           0.0d0,     1.0d0/2.0d0 /)
+    SGbase(Y,SG)%nsy(1:3,24) = (/           0.0d0,           0.0d0,     1.0d0/2.0d0 /)
+    SGbase(Y,SG)%nop        =24
+    SGbase(Y,SG)%assigned   =.TRUE.
+
